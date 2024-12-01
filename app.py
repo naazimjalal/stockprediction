@@ -7,11 +7,19 @@ from datetime import date
 import yfinance as yf
 from sklearn.preprocessing import MinMaxScaler
 
-stocks = ('GOOGL', 'AAPL', 'MSFT', 'GME')
+stocks = (
+    "AAPL", "GOOG", "AMZN", "MSFT", "TSLA", "META", "NFLX", "NVDA", "BABA", "WMT",  # Tech and Retail
+    "DIS", "BA", "IBM", "INTC", "CSCO", "NVDA", "AMD", "PYPL", "SNAP", "TWTR",  # Entertainment and Tech
+    "NVDA", "V", "MA", "JPM", "GS", "C", "WFC", "HSBC", "AXP", "MS",  # Financials
+    "GE", "CAT", "DE", "MMM", "LMT", "RTX", "NOC", "BA",  # Industrials
+    "KO", "PEP", "PG", "COST", "TGT", "CVS", "MRK", "JNJ", "UNH", "PFE",  # Consumer Goods and Healthcare
+    "XOM", "CVX", "COP", "BP", "TOT", "RDS.A", "EOG", "SLB", "OXY", "MRO",  # Energy and Oil
+    "LUV", "DAL", "UAL", "AAL", "BA", "GS", "C",  # Airlines and Travel
+    "SPY", "VIX", "QQQ", "DIA", "IWM", "EFA", "EEM"  # ETFs
+)
 START = "2015-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
 st.title('Stock Price Prediction')
-user_input = st.text_input('Enter Stock Ticker', 'GOOGL')
 user_input = st.selectbox('Select dataset for prediction', stocks)
 df = yf.download(user_input, START, TODAY)
 st.text("Developed by: Naazm Ridima and Shaurya")
