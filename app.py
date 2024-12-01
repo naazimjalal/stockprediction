@@ -15,7 +15,16 @@ stocks = (
     "KO", "PEP", "PG", "COST", "TGT", "CVS", "MRK", "JNJ", "UNH", "PFE",  # Consumer Goods and Healthcare
     "XOM", "CVX", "COP", "BP", "TOT", "RDS.A", "EOG", "SLB", "OXY", "MRO",  # Energy and Oil
     "LUV", "DAL", "UAL", "AAL", "BA", "GS", "C",  # Airlines and Travel
-    "SPY", "VIX", "QQQ", "DIA", "IWM", "EFA", "EEM"  # ETFs
+    "SPY", "VIX", "QQQ", "DIA", "IWM", "EFA", "EEM",  # ETFs
+    # Indian Stock Tickers
+    "TCS", "INFY", "WIPRO", "HCLTECH", "TECHM", "LTTS",  # IT and Tech
+    "RELIANCE", "HDFC", "DMART", "TITAN", "ITC",  # Consumer Goods & Retail
+    "ICICI", "HDFCBANK", "AXISBANK", "KOTAKBANK", "SBI",  # Financials
+    "ONGC", "BPCL", "IOC", "GAIL", "RELIANCE",  # Energy & Oil
+    "SUNPHARMA", "CIPLA", "DRREDDY", "AARTIIND", "DIVISLAB",  # Pharma & Healthcare
+    "MARUTI", "TATAMOTORS", "BAJAJ-AUTO", "M&M", "ASHOKLEY",  # Automobile & Industrial
+    "BHARTIARTL", "JIO", "IDEA",  # Telecom
+    "NIFTY", "SENSEX"  # Indian ETFs
 )
 START = "2015-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
