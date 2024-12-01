@@ -10,10 +10,11 @@ from sklearn.preprocessing import MinMaxScaler
 stocks = ('GOOGL', 'AAPL', 'MSFT', 'GME')
 START = "2015-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
-st.title('Stock Closing Price Prediction')
+st.title('Stock Price Prediction')
 user_input = st.text_input('Enter Stock Ticker', 'GOOGL')
 user_input = st.selectbox('Select dataset for prediction', stocks)
 df = yf.download(user_input, START, TODAY)
+st.text("Developed by: Naazm Ridima and Shaurya")
 st.subheader('Dated from 1st Jan, 2009 to 1st Jan, 2023')
 st.write(df.describe())
 st.subheader('Closing Price Vs Time Chart')
